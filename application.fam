@@ -1,0 +1,11 @@
+App(
+    appid="awiegand_emu",
+    name="Wiegand Emulator",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="awiegand_emu_app",
+    cdefines=["APP_WIEGAND_EMU"],
+    requires=["gui"],
+    stack_size=1 * 1024,
+    icon="A_Plugins_14",
+    order=30,
+)
