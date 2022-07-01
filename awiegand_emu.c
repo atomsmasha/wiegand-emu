@@ -113,7 +113,7 @@ static void cursor_right(void* ctx) {
     WiegandEmu* wiegand_emu = ctx;
     uint8_t curs_pos = wiegand_emu->model->cursor_position;
 
-    if (curs_pos < 5) {
+    if (curs_pos < CODELEN - 1) {
         wiegand_emu->model->cursor_position += 1;
     } else {
         wiegand_emu->model->cursor_position = 0;
